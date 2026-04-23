@@ -22,63 +22,24 @@ repository               : "academicpages/academicpages.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "images/profile.png"
   name             : "阎建玮 · Jianwei Yan"
+  avatar           : "images/profile.png"
   bio              : "百人计划研究员 | 博士生导师<br>浙江大学外国语学院"
   location         : "Hangzhou, China"
-  uri              : "mailto:yanjianwei@aliyun.com"
   email            : "yanjianwei@aliyun.com"
-
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  inspire-hep      : # URL
-  impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
-  semantic         : # URL
-  ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
-  zotero           : # URL
-
-
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
-  # Social media
-  artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:yanjianwei@aliyun.com"
+    - label: "ZJU主页"
+      icon: "fas fa-fw fa-university"
+      url: "https://person.zju.edu.cn/jwyan"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=rvKyc_8AAAAJ&hl=en"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/andy-jwyan"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
