@@ -2,7 +2,7 @@
 # Site Settings
 # -----------------------------------------------------------------------------
 locale                   : "en-US"
-title                    : "Jianwei Yan 阎建玮"
+title                    : "Jianwei Yan"
 title_separator          : "-"
 name                     : "Jianwei Yan"
 description              : "百人计划研究员，浙江大学外国语学院"
@@ -18,9 +18,9 @@ timezone                 : Asia/Shanghai
 # Author Information
 # -----------------------------------------------------------------------------
 author:
-  name             : "阎建玮 · Jianwei Yan"
+  name             : "Jianwei Yan · 阎建玮"
   avatar           : "citations.jpeg"
-  bio              : "百人计划研究员 | 博士生导师<br>浙江大学外国语学院"
+  bio              : "Assistant Prefessor(百人计划研究员) <br> Zhejiang University"
   location         : "Hangzhou, China"
   email            : "yanjianwei@aliyun.com"
   uri              : "https://person.zju.edu.cn/jwyan"
