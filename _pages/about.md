@@ -32,6 +32,7 @@ I am an assistant professor ("Hundred Talents Program") and doctoral supervisor 
 
 ---
 
+<!-- 
 ## Selected Publications
 
 {% include base_path %}
@@ -47,7 +48,8 @@ I am an assistant professor ("Hundred Talents Program") and doctoral supervisor 
   {% assign current_year = post_year %}
   {% endif %}
 - {{ post.citation }}
-{% endfor %}
+{% endfor %} 
+-->
 
 ## Collaborators
 
