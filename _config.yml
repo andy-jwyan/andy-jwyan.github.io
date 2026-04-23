@@ -2,7 +2,7 @@
 # Site Settings
 # -----------------------------------------------------------------------------
 locale                   : "zh-CN"
-title                    : "阎建玮 · Jianwei Yan"
+title                    : "Jianwei Yan 阎建玮"
 title_separator          : "-"
 name                     : "Jianwei Yan"
 description              : "百人计划研究员，浙江大学外国语学院"
@@ -25,10 +25,10 @@ author:
   email            : "yanjianwei@aliyun.com"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:yanjianwei@aliyun.com"
-    - label: "ZJU主页"
-      icon: "fas fa-fw fa-university"
+    - label: "ZJU Homepage"
+      icon: "fas fa-fw fa-home"
       url: "https://person.zju.edu.cn/jwyan"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
@@ -42,6 +42,9 @@ author:
     - label: "Scopus"
       icon: "fas fa-fw fa-database"
       url: "https://www.scopus.com/authid/detail.uri?authorId=57195479467"
+    - label: "Web of Science"
+      icon: "fas fa-fw fa-flask"
+      url: "https://www.webofscience.com/wos/author/record/G-3630-2017"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/andy-jwyan"
