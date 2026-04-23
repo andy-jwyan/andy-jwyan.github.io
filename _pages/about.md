@@ -1,18 +1,21 @@
 ---
 permalink: /
-title: "Parole, Humanities, Computing"
+title: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-## 个人简介
-Jianwei Yan is currently a linguistic researcher supported by the “Hundred Talents Program” at the Department of Linguistics, Zhejiang University. His research focuses on the Intralingual and Interlingual dynamics of different components of human languages (primarily morphology and syntax). He and his colleagues combine these research interests with Quantitative Linguistics, Linguistic Typology and Second Language Development. Their publications appear in Glottometrics, Journal of Quantitative Linguistics, Вопросы Языкознания (Voprosy Jazykoznanija), Natural Language Engineering, Studia Linguistica, Linguistics Vanguard, Linguistic Analysis, and so forth.
+## Bio
+
+Jianwei Yan is currently a researcher supported by the "Hundred Talents Program" at the School of International Studies, Zhejiang University. His research focuses on the intralingual and interlingual dynamics of different components of human languages (primarily morphology and syntax), combining **Quantitative Linguistics**, **Linguistic Typology**, and **Second Language Development**. His publications appear in *Glottometrics*, *Journal of Quantitative Linguistics*, *Natural Language Engineering*, *Studia Linguistica*, *Linguistics Vanguard*, and other international journals.
+
+📧 yanjianwei@aliyun.com | 📍 Room East 5-201, Zijingang Campus, Zhejiang University
 
 ---
 
-## 研究方向
+## Research Interest
 
 - 计量语言学（Quantitative Linguistics）
 - 语言类型学（Linguistic Typology）
@@ -23,6 +26,4 @@ Jianwei Yan is currently a linguistic researcher supported by the “Hundred Tal
 
 ## 工作经历
 
-- 现任：浙江大学外国语学院，百人计划研究员（年份至今）
-- （请补充其他经历）
-
+- 现任：浙江大学外国语学院，百人计划研究员、博士生导师
