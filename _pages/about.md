@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Parole, Humanities, Computing"
+title: ""
 author_profile: true
 redirect_from:
   - /about/
