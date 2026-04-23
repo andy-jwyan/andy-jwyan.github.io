@@ -48,3 +48,10 @@ I am an assistant professor ("Hundred Talents Program") and doctoral supervisor 
   {% endif %}
 - {{ post.citation }}
 {% endfor %}
+
+## Collaborators
+
+<div style="margin-top: 0.5rem; font-size: 15px; line-height: 2;">
+<a href="https://faculty.fudan.edu.cn/lht">Haitao Liu 刘海涛</a> &nbsp;|&nbsp;
+<a href="https://sites.google.com/view/yaqinwang/home">Yaqin Wang 王雅琴</a>
+</div>
