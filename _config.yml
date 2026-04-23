@@ -13,7 +13,7 @@ title                    : "阎建玮 / Jianwei Yan"
 title_separator          : "-"
 name                     : &name "Jianwei Yan"
 description              : &description "Assistant Professor (百人计划研究员), Zhejiang University"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://jianweiyan.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : "https://andy-jwyan.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
