@@ -7,23 +7,44 @@ redirect_from:
   - /about.html
 ---
 
-## Bio
+## About Me
 
-Jianwei Yan is currently a researcher supported by the "Hundred Talents Program" at the School of International Studies, Zhejiang University. His research focuses on the intralingual and interlingual dynamics of different components of human languages (primarily morphology and syntax), combining **Quantitative Linguistics**, **Linguistic Typology**, and **Second Language Development**. His publications appear in *Glottometrics*, *Journal of Quantitative Linguistics*, *Natural Language Engineering*, *Studia Linguistica*, *Linguistics Vanguard*, and other international journals.
+I am an assistant professor ("Hundred Talents Program") and doctoral supervisor at the School of International Studies, Zhejiang University. My research centers on the quantitative study of human language, combining large-scale corpus methods with frameworks from **Quantitative Linguistics** and **Linguistic Typology**. Empirically, I focus on three interconnected areas: the cross-linguistic patterns of morphology and syntax, the dynamic development of language proficiency in second language learners, and the quantitative practices of **Digital Humanities**. My work has appeared in *Glottometrics*, *Journal of Quantitative Linguistics*, *Natural Language Engineering*, *Studia Linguistica*, *Linguistics Vanguard*, *Digital Scholarship in the Humanities*, and other international venues.
 
-📧 yanjianwei@aliyun.com | 📍 Room East 5-201, Zijingang Campus, Zhejiang University
-
----
-
-## Research Interest
-
-- 计量语言学（Quantitative Linguistics）
-- 语言类型学（Linguistic Typology）
-- 外语能力发展（Foreign Language Development）
-- 数字人文（Digital Humanities）
+📧 yanjianwei@aliyun.com &nbsp;|&nbsp; 📍 Room East 5-201, Zijingang Campus, Zhejiang University
 
 ---
 
-## 工作经历
+## Research Focus
 
-- 现任：浙江大学外国语学院，百人计划研究员、博士生导师
+- Quantitative Linguistics
+- Linguistic Typology
+- Foreign Language Development & Assessment
+- Digital Humanities
+
+---
+
+## Academic Positions
+
+| Period | Position | Institution |
+|--------|----------|-------------|
+| 2020 – present | Researcher, Hundred Talents Program; Doctoral Supervisor | School of International Studies, Zhejiang University |
+
+---
+
+## Selected Publications
+
+{% include base_path %}
+
+{% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+{% assign current_year = '' %}
+
+{% for post in sorted_pubs %}
+  {% assign post_year = post.date | date: '%Y' %}
+  {% if post_year != current_year %}
+
+### {{ post_year }}
+  {% assign current_year = post_year %}
+  {% endif %}
+- {{ post.citation }}
+{% endfor %}
