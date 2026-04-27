@@ -43,11 +43,13 @@ I am an assistant professor ("Hundred Talents Program") and doctoral supervisor 
 {% endfor %} 
 
 
-## Collaborators
+## Academic Network
 
 <div style="margin-top: 0.5rem; font-size: 15px; line-height: 2;">
 <a href="https://faculty.fudan.edu.cn/lht">Haitao Liu 刘海涛</a> &nbsp;|&nbsp;
-<a href="https://sites.google.com/view/yaqinwang/home">Yaqin Wang 王雅琴</a>
+<a href="https://sites.google.com/view/yaqinwang/home">Yaqin Wang 王雅琴</a> &nbsp;|&nbsp;
+<a href="https://www.yuyanxue.net/">Xinying Chen 陈芯莹</a> &nbsp;|&nbsp;
+<a href="https://miroslavkubat.webnode.cz/">Miroslav Kubát</a> 
 </div>
 
 ## Visitor Map
