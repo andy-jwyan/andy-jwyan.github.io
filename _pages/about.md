@@ -9,7 +9,7 @@ redirect_from:
 
 ## About Me
 
-I am an assistant professor ("Hundred Talents Program") and doctoral supervisor at the School of International Studies, Zhejiang University. My research centers on the quantitative study of human language, combining large-scale corpus methods with frameworks from **Quantitative Linguistics** and **Linguistic Typology**. Empirically, I focus on three interconnected areas: the cross-linguistic patterns of morphology and syntax, the dynamic development of language proficiency in second language learners, and the quantitative practices of **Digital Humanities**. My work has appeared in *Glottometrics*, *Journal of Quantitative Linguistics*, *Natural Language Engineering*, *Studia Linguistica*, *Linguistics Vanguard*, *Digital Scholarship in the Humanities*, and other international venues.
+I am an assistant professor ("Hundred Talents Program") and doctoral supervisor at the School of International Studies, Zhejiang University. My research centers on the quantitative study of human language, combining large-scale corpus methods with frameworks from **Quantitative Linguistics** and **Linguistic Typology**. Empirically, I focus on three interconnected areas: the cross-linguistic patterns of morphology and syntax, the dynamic development of language proficiency in second language learners, and the quantitative practices of **Digital Humanities**. My work has appeared in *Glottometrics*, *Journal of Quantitative Linguistics*, *Natural Language Engineering*, *Studia Linguistica*, *Linguistics Vanguard*, *Digital Scholarship in the Humanities*, and other international venues.</a>
 **Email**: yanjianwei@aliyun.com;jwyan@zju.edu.cn
 
 
