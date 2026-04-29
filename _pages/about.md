@@ -51,9 +51,3 @@ I am an assistant professor at the School of International Studies, Zhejiang Uni
 <a href="https://www.yuyanxue.net/">Xinying Chen 陈芯莹</a> &nbsp;|&nbsp;
 <a href="https://miroslavkubat.webnode.cz/">Miroslav Kubát</a> 
 </div>
-
-## Visitor Map
-
-<div style="text-align: center; margin: 1rem 0;">
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=aE0a4YPMnH5ParPus0UagRhaqTV8k8joGn8n8j-H9GM&cl=ffffff&w=a"></script>
-</div>
