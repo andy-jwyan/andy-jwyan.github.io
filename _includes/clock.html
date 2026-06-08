@@ -1,0 +1,112 @@
+<!-- Beijing Time Clock — _includes/clock.html -->
+<div style="text-align:center; margin: 1rem 0 0.5rem;">
+  <div style="font-size:10px; color:#aaa; margin-bottom:5px; letter-spacing:0.1em; text-transform:uppercase;">Beijing Time</div>
+  <canvas id="roman-clock" width="140" height="140" style="display:block; margin:0 auto;"></canvas>
+  <div id="roman-clock-time" style="font-size:11px; color:#bbb; margin-top:5px; font-family:monospace; letter-spacing:0.06em;"></div>
+  <div id="roman-clock-date" style="font-size:10px; color:#888; margin-top:2px; font-family:monospace;"></div>
+</div>
+
+<script>
+(function () {
+  var canvas = document.getElementById('roman-clock');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var cx = 70, cy = 70, R = 63;
+  var roman  = ['XII','I','II','III','IV','V','VI','VII','VIII','IX','X','XI'];
+  var days   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function getBeijing() {
+    var now = new Date();
+    var utc = now.getTime() + now.getTimezoneOffset() * 60000;
+    return new Date(utc + 8 * 3600000);
+  }
+
+  function draw() {
+    var t = getBeijing();
+    var h = t.getHours() % 12;
+    var m = t.getMinutes();
+    var s = t.getSeconds();
+
+    ctx.clearRect(0, 0, 140, 140);
+
+    // blue rim
+    ctx.beginPath();
+    ctx.arc(cx, cy, R + 5, 0, Math.PI * 2);
+    ctx.strokeStyle = '#2244cc';
+    ctx.lineWidth = 2.5;
+    ctx.stroke();
+
+    // black face
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, 0, Math.PI * 2);
+    ctx.fillStyle = '#000';
+    ctx.fill();
+
+    // tick marks
+    for (var i = 0; i < 60; i++) {
+      var a     = (i / 60) * Math.PI * 2 - Math.PI / 2;
+      var major = i % 5 === 0;
+      var inner = major ? R - 10 : R - 6;
+      ctx.beginPath();
+      ctx.moveTo(cx + Math.cos(a) * inner, cy + Math.sin(a) * inner);
+      ctx.lineTo(cx + Math.cos(a) * (R - 1), cy + Math.sin(a) * (R - 1));
+      ctx.strokeStyle = major ? '#ccc' : 'rgba(180,180,180,0.35)';
+      ctx.lineWidth   = major ? 1.5 : 0.8;
+      ctx.stroke();
+    }
+
+    // Roman numerals
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#fff';
+    for (var j = 0; j < 12; j++) {
+      var ang   = (j / 12) * Math.PI * 2 - Math.PI / 2;
+      var nr    = R - 16;
+      var x     = cx + Math.cos(ang) * nr;
+      var y     = cy + Math.sin(ang) * nr;
+      var label = roman[j];
+      var fs    = (label === 'XII' || label === 'VIII') ? 6.5
+                : label.length === 3 ? 7.5 : 9.5;
+      ctx.font  = fs + 'px serif';
+      ctx.fillText(label, x, y);
+    }
+
+    // hands
+    function hand(deg, len, width, color) {
+      var rad = (deg - 90) * Math.PI / 180;
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(rad);
+      ctx.lineCap     = 'round';
+      ctx.strokeStyle = color;
+      ctx.lineWidth   = width;
+      ctx.beginPath();
+      ctx.moveTo(0, len * 0.18);
+      ctx.lineTo(0, -len);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    hand(h * 30 + m * 0.5 + s * (0.5/60), R * 0.50, 3.5, '#fff');
+    hand(m * 6  + s * 0.1,                 R * 0.70, 2.2, '#fff');
+    hand(s * 6,                             R * 0.78, 1.2, '#e03030');
+
+    // center cap
+    ctx.beginPath(); ctx.arc(cx, cy, 3.5, 0, Math.PI * 2);
+    ctx.fillStyle = '#e03030'; ctx.fill();
+    ctx.beginPath(); ctx.arc(cx, cy, 1.8, 0, Math.PI * 2);
+    ctx.fillStyle = '#fff'; ctx.fill();
+
+    // digital + date
+    function pad(n) { return ('0' + n).slice(-2); }
+    document.getElementById('roman-clock-time').textContent =
+      pad(t.getHours()) + ':' + pad(m) + ':' + pad(s);
+    document.getElementById('roman-clock-date').textContent =
+      days[t.getDay()] + ', ' + pad(t.getDate()) + ' ' + months[t.getMonth()] + ' ' + t.getFullYear();
+  }
+
+  draw();
+  setInterval(draw, 1000);
+})();
+</script>
