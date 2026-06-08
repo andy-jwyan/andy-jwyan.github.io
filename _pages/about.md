@@ -1,4 +1,11 @@
 ---
+permalink: /
+title: ""
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
 <div style="text-align:center; margin: 1rem 0;">
   <div style="font-size:11px; color:#aaa; margin-bottom:5px; letter-spacing:0.1em;">BEIJING TIME</div>
   <canvas id="roman-clock" width="140" height="140" style="display:block; margin:0 auto;"></canvas>
@@ -58,13 +65,6 @@
   draw(); setInterval(draw,1000);
 })();
 </script>
-permalink: /
-title: ""
-author_profile: true
-redirect_from:
-  - /about/
-  - /about.html
----
 
 ## About Me
 
