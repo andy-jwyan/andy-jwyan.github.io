@@ -106,4 +106,66 @@ layout: default
       </div>
     </div>
   {% endif %}
+
+  {% if page.right_sidebar %}
+  <aside class="page__right-sidebar">
+    <div class="right-sidebar__clock">
+      <canvas id="clock-canvas" width="140" height="140"></canvas>
+      <p id="clock-digital" style="font-size:13px;text-align:center;font-variant-numeric:tabular-nums;margin:6px 0 2px;"></p>
+      <p style="font-size:11px;color:#888;text-align:center;margin:0;">UTC+8 · Hangzhou</p>
+    </div>
+    <div class="right-sidebar__network">
+      <h3>Academic Network</h3>
+      <ul>
+        <li><a href="https://faculty.fudan.edu.cn/lht">Haitao Liu 刘海涛</a></li>
+        <li><a href="https://sites.google.com/view/yaqinwang/home">Yaqin Wang 王雅琴</a></li>
+        <li><a href="https://www.yuyanxue.net/">Xinying Chen 陈芯莹</a></li>
+        <li><a href="https://miroslavkubat.webnode.cz/">Miroslav Kubát</a></li>
+      </ul>
+    </div>
+  </aside>
+  <script>
+  (function(){
+    var cv=document.getElementById('clock-canvas');
+    if(!cv)return;
+    var ctx=cv.getContext('2d');
+    var dg=document.getElementById('clock-digital');
+    function draw(){
+      var now=new Date();
+      var h=(now.getUTCHours()+8)%24,m=now.getMinutes(),s=now.getSeconds();
+      ctx.clearRect(0,0,140,140);
+      ctx.beginPath();ctx.arc(70,70,68,0,Math.PI*2);
+      ctx.fillStyle='#f8f8f6';ctx.fill();
+      ctx.strokeStyle='#ccc';ctx.lineWidth=2;ctx.stroke();
+      for(var i=0;i<60;i++){
+        var a=(i/60)*Math.PI*2-Math.PI/2,maj=i%5===0;
+        var r1=maj?56:63;
+        ctx.beginPath();
+        ctx.moveTo(70+Math.cos(a)*r1,70+Math.sin(a)*r1);
+        ctx.lineTo(70+Math.cos(a)*66,70+Math.sin(a)*66);
+        ctx.strokeStyle=maj?'#333':'#bbb';ctx.lineWidth=maj?2:1;ctx.stroke();
+      }
+      [12,1,2,3,4,5,6,7,8,9,10,11].forEach(function(n,i){
+        var a=(i/12)*Math.PI*2-Math.PI/2;
+        ctx.fillStyle='#333';ctx.font='10px sans-serif';
+        ctx.textAlign='center';ctx.textBaseline='middle';
+        ctx.fillText(n,70+Math.cos(a)*50,70+Math.sin(a)*50);
+      });
+      function hand(ang,len,w,c){
+        ctx.beginPath();ctx.moveTo(70,70);
+        ctx.lineTo(70+Math.cos(ang)*len,70+Math.sin(ang)*len);
+        ctx.strokeStyle=c;ctx.lineWidth=w;ctx.lineCap='round';ctx.stroke();
+      }
+      hand(((h%12+m/60)/12)*Math.PI*2-Math.PI/2,36,4,'#222');
+      hand(((m+s/60)/60)*Math.PI*2-Math.PI/2,52,2.5,'#444');
+      hand((s/60)*Math.PI*2-Math.PI/2,58,1.5,'#c0392b');
+      ctx.beginPath();ctx.arc(70,70,4,0,Math.PI*2);ctx.fillStyle='#c0392b';ctx.fill();
+      ctx.beginPath();ctx.arc(70,70,2,0,Math.PI*2);ctx.fillStyle='#222';ctx.fill();
+      var hh=String(h).padStart(2,'0'),mm=String(m).padStart(2,'0'),ss=String(s).padStart(2,'0');
+      dg.textContent=hh+':'+mm+':'+ss;
+    }
+    draw();setInterval(draw,1000);
+  })();
+  </script>
+  {% endif %}
 </div>
