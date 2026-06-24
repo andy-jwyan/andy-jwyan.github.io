@@ -2,6 +2,7 @@
 permalink: /
 title: "Parole, Humanities, Computing"
 author_profile: true
+right_sidebar: true
 redirect_from:
   - /about/
   - /about.html
