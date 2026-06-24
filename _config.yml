@@ -1,6 +1,7 @@
 # -----------------------------------------------------------------------------
 # Site Settings
 # -----------------------------------------------------------------------------
+remote_theme: academicpages/academicpages.github.io
 locale                   : "en-US"
 title                    : "Jianwei Yan"
 title_separator          : "-"
