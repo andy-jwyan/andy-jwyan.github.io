@@ -1,11 +1,18 @@
+#main {
+  display: flex;
+  align-items: flex-start;
+}
+
 .page__right-sidebar {
   position: sticky;
   top: 2rem;
   width: 200px;
-  float: right;
+  min-width: 200px;
+  max-width: 200px;
   margin-left: 1rem;
   padding: 1rem;
   border-left: 1px solid #eee;
+  order: 3;
 
   .right-sidebar__clock {
     margin-bottom: 1.5rem;
