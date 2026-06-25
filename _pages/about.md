@@ -44,6 +44,3 @@ I am an assistant professor at the School of International Studies, Zhejiang Uni
 - {{ post.citation }}
 {% endfor %} 
 
-## Visitor Map
-
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=LNIUrJkXLOr42Zn-9w_jkjPK2QNi4QXVQfGGk3ju-0I&cl=ffffff&w=a"></script>
