@@ -18,6 +18,8 @@ classes: wide
   {% endfor %}
 </div>
 
+<p class="glimpse-closing">Every glance has its syntax.</p>
+
 <div class="glimpse-lightbox" id="glimpse-lightbox">
   <span class="glimpse-lightbox__close" id="glimpse-lightbox-close">&times;</span>
   <img src="" alt="" id="glimpse-lightbox-img">
