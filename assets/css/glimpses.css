@@ -98,3 +98,12 @@
     animation: none;
   }
 }
+
+.glimpse-closing {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #a39a8c;
+  margin: 28px 0 8px;
+}
