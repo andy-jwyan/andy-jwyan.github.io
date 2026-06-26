@@ -1,15 +1,22 @@
 /* ===== Glimpses — masonry grid + lightbox ===== */
 
+.glimpse-item {
+  margin: 0 0 6px;
+  break-inside: avoid;
+  overflow: hidden;
+  background: #eceae6;
+}
 .glimpses-grid {
   column-count: 3;
-  column-gap: 6px;
+  column-fill: balance;
+  column-gap: 4px;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
 .glimpse-item {
-  margin: 0 0 6px;
+  margin: 0 0 4px;
   break-inside: avoid;
   overflow: hidden;
   background: #eceae6;
