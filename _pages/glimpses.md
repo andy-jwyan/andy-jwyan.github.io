@@ -18,7 +18,7 @@ classes: wide
   {% endfor %}
 </div>
 
-<p class="glimpse-closing">Every glance has its syntax.</p>
+<p class="glimpse-closing">The world, as I see it.</p>
 
 <div class="glimpse-lightbox" id="glimpse-lightbox">
   <span class="glimpse-lightbox__close" id="glimpse-lightbox-close">&times;</span>
