@@ -4,6 +4,7 @@ permalink: /glimpses/
 layout: single
 author_profile: false
 right_sidebar: false
+classes: wide
 ---
 
 <div class="glimpses-grid" id="glimpses-grid">
