@@ -1,0 +1,93 @@
+/* ===== Glimpses — masonry grid + lightbox ===== */
+
+.glimpses-grid {
+  column-count: 3;
+  column-gap: 6px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.glimpse-item {
+  margin: 0 0 6px;
+  break-inside: avoid;
+  overflow: hidden;
+  background: #eceae6;
+}
+
+.glimpse-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.glimpse-thumb:hover {
+  transform: scale(1.015);
+  filter: brightness(1.04);
+}
+
+/* Responsive column counts */
+@media (max-width: 1024px) {
+  .glimpses-grid { column-count: 2; }
+}
+
+@media (max-width: 600px) {
+  .glimpses-grid { column-count: 1; }
+}
+
+/* ===== Lightbox ===== */
+
+.glimpse-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 18, 16, 0.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  cursor: zoom-out;
+}
+
+.glimpse-lightbox.is-open {
+  display: flex;
+  animation: glimpse-fade-in 0.2s ease;
+}
+
+.glimpse-lightbox img {
+  max-width: 92vw;
+  max-height: 92vh;
+  object-fit: contain;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.glimpse-lightbox__close {
+  position: fixed;
+  top: 18px;
+  right: 28px;
+  font-size: 38px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  font-family: Georgia, serif;
+  user-select: none;
+}
+
+.glimpse-lightbox__close:hover {
+  color: #ffffff;
+}
+
+@keyframes glimpse-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glimpse-thumb,
+  .glimpse-lightbox.is-open {
+    transition: none;
+    animation: none;
+  }
+}
