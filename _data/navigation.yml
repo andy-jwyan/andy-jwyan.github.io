@@ -12,5 +12,8 @@ main:
     url: /publications/
   - title: "Talks"
     url: /talks/
-  - title: "Glimpses"
-    url: /glimpses/
+  - title: "Contact"
+    url: /contact/
+#  - title: "Glimpses"
+#    url: /glimpses/
+    
