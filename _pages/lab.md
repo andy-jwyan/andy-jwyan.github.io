@@ -1,5 +1,5 @@
 ---
-title: "Yan's Lab"
+title: "Yan's Lab (言语计量与数字人文)"
 permalink: /lab/
 layout: single
 author_profile: false
@@ -9,7 +9,7 @@ classes: wide
 
 <div class="lab-section">
 
-## Lab Members
+<h2>Lab Members</h2>
 
 <div class="lab-member">
   <img src="{{ '/images/lab/member-placeholder-1.jpg' | relative_url }}" alt="Member photo" class="lab-member__photo">
@@ -31,7 +31,7 @@ classes: wide
 
 <div class="lab-section">
 
-## Lab Alumni
+<h2>Lab Alumni</h2>
 
 <div class="lab-member">
   <img src="{{ '/images/lab/alumni-placeholder-1.jpg' | relative_url }}" alt="Alumni photo" class="lab-member__photo">
