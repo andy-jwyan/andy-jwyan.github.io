@@ -109,6 +109,13 @@ layout: default
 
   {% if page.right_sidebar %}
   <aside class="page__right-sidebar">
+    <style>
+      .right-sidebar__network h3,
+      .right-sidebar__network li,
+      .right-sidebar__network a {
+        color: inherit;
+      }
+    </style>
     <div class="right-sidebar__clock">
       <canvas id="clock-canvas" width="140" height="140"></canvas>
       <p id="clock-digital" style="font-size:13px;text-align:center;font-variant-numeric:tabular-nums;margin:6px 0 2px;"></p>
