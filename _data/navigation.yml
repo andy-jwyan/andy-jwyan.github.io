@@ -12,6 +12,8 @@ main:
     url: /publications/
   - title: "Talks"
     url: /talks/
+  - title: "Yan's Lab"
+    url: /lab/
   - title: "Contact"
     url: /contact/
 #  - title: "Glimpses"
