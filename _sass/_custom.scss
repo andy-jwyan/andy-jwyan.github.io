@@ -19,3 +19,13 @@
     a:hover { color: #000; }
   }
 }
+
+@media (max-width: 768px) {
+  .page__right-sidebar {
+    position: static;
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+  }
+}
