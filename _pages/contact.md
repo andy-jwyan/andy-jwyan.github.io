@@ -2,9 +2,8 @@
 title: "Contact"
 permalink: /contact/
 layout: single
-author_profile: false
-right_sidebar: false
-classes: wide
+author_profile: true
+right_sidebar: true
 ---
 
 <div class="contact-block">
