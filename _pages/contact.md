@@ -14,7 +14,7 @@ right_sidebar: true
   No. 866, Yuhangtang Road, Xihu District, Hangzhou<br>
   310058, P. R. China</p>
 
-  <p><strong>阎建玮<strong><br>
+  <p><strong>阎建玮</strong><br>
   浙江省杭州市西湖区余杭塘路866号<br>
   浙江大学紫金港校区东五201<br>
   邮编：310058</p>
