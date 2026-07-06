@@ -3,7 +3,7 @@ title: "Contact"
 permalink: /contact/
 layout: single
 author_profile: true
-right_sidebar: true
+right_sidebar: false
 ---
 
 <div class="contact-block">
