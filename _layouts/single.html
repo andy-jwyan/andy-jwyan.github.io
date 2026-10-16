@@ -148,6 +148,12 @@ layout: default
     if(!cv)return;
     var ctx=cv.getContext('2d');
     var dg=document.getElementById('clock-digital');
+    var size=140,dpr=Math.max(1,window.devicePixelRatio||1);
+    cv.style.width=size+'px';
+    cv.style.height=size+'px';
+    cv.width=Math.round(size*dpr);
+    cv.height=Math.round(size*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
     function draw(){
       var now=new Date();
       var h=(now.getUTCHours()+8)%24,m=now.getMinutes(),s=now.getSeconds();
@@ -165,9 +171,9 @@ layout: default
       }
       ['XII','I','II','III','IV','V','VI','VII','VIII','IX','X','XI'].forEach(function(n,i){
         var a=(i/12)*Math.PI*2-Math.PI/2;
-        ctx.fillStyle='#333';ctx.font='10px sans-serif';
+        ctx.fillStyle='#222';ctx.font='600 12px Georgia, "Times New Roman", serif';
         ctx.textAlign='center';ctx.textBaseline='middle';
-        ctx.fillText(n,70+Math.cos(a)*48,70+Math.sin(a)*48);
+        ctx.fillText(n,70+Math.cos(a)*47,70+Math.sin(a)*47);
       });
       function hand(ang,len,w,c){
         ctx.beginPath();ctx.moveTo(70,70);
