@@ -20,6 +20,15 @@
   }
 }
 
+html[data-theme="dark"] .page__right-sidebar .right-sidebar__network {
+  h3,
+  li,
+  a,
+  a:hover {
+    color: #fff;
+  }
+}
+
 @media (max-width: 768px) {
   .page__right-sidebar {
     position: static;
